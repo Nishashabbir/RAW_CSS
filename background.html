@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BACKGROUND-CSS</title>
+    <style>
+        /* by default the background of the image is rapeated so you can use background rapeat properties  */
+
+        .obj4 {
+            width: 500px;
+            height: 400px;
+            background: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS-8Ne4j_5gRNNikzu_KZRIyzSihAQ74KAbiQ&s");
+            background-repeat: repeat-x;
+            /* it means if the width of the iamge is small , applying this property will rapeat the width in only horizontal position but not vertical  */
+margin-top: 30px;
+
+        }
+
+        .obj5 {
+            width: 300px;
+            height: 400px;
+            background: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS-8Ne4j_5gRNNikzu_KZRIyzSihAQ74KAbiQ&s");
+            background-repeat:  repeat-y; /*same for that one  */
+            background-repeat: no-repeat;
+        }
+        .obj6{
+              width: 300px;
+            height: 400px;
+            background: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS-8Ne4j_5gRNNikzu_KZRIyzSihAQ74KAbiQ&s");
+            /* background-repeat:  repeat-y; same for that one  */
+            background-repeat: no-repeat;
+            background-clip: border-box;
+            /* you can further explore it with MDN references by right clicking  */
+
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- look instead of inserting the image you can also apply the image as backgroung  -->
+    <div class="container obj5">Box1</div>
+    <div class="container obj4">Box2</div>
+ <div class="container obj6">Box2</div>
+
+
+</body>
+
+</html>

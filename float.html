@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>OLD-PROPERTY</title>
+    <style>
+         .cards{
+                        border: solid 2px red;
+                         /* whenever we use the float property the image if it is overflowing from the container it will overflow but we can write a flow root property which will save it from overflowing  in the parent container */
+ display: flow-root;
+ /* everything will stay inside the parent container without overflowing it  */
+ /* you can also use overflow: auto to do the things  */
+      
+
+        }
+        img {
+            /* float: right; */
+            float: left;
+ /* one block element will get aside and the other will be allowed to its other side  */
+       
+}
+        .card{
+            border: solid 1px grey ;
+
+        }
+        /* if we want that there should be no content on the right of any element or div then we will use clear right property  */
+       
+     .card:nth-child(3){ /* to access the second child , write its class name with number  */
+        background-color: aqua;
+        clear: left;
+        /* clear: both; you can also use this  */
+     }
+
+
+    </style>
+</head>
+
+<body>
+
+    <div class="cards">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRtF1Gz_Xsh2r_DfO5JaLspe4oKYcEGo-myBg&s" alt="">
+        <div class="card card1">
+            <p> Lorem ipsum dolor sit, amet consectetur adipisicing elit. At dicta necessitatibus, recusandae non
+                obcaecati, quae molestias, ipsum ullam eligendi incidunt fugiat id dolore quis facilis quaerat
+                aspernatur consequatur sequi laboriosam perferendis maiores repudiandae rerum!</p>
+        </div>
+        <!-- here in this card applying so much text , still the image will float in the container  -->
+        <div class="card">Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto exercitationem omnis autem, veritatis fugit culpa expedita voluptatum ea. Fugiat voluptates, ut veritatis laudantium maiores ex nisi magnam sit, libero incidunt dolorem tenetur tempore quisquam neque, vero fugit minus cumque consequatur at obcaecati quos doloribus. Alias possimus ea temporibus quae, mollitia amet dolorem quia aspernatur dolor optio, nobis debitis. Maxime voluptas accusantium doloremque ipsa totam consequatur ipsum excepturi laboriosam maiores unde iure assumenda delectus temporibus, voluptatibus corporis modi? Provident non soluta a aliquid accusantium suscipit, harum officiis, similique sint temporibus ipsam alias blanditiis quibusdam eveniet voluptatum unde iste cum commodi, voluptates delectus ab consectetur. Temporibus, error assumenda esse dolor cumque neque pariatur laborum eius perspiciatis nam! Vitae, molestiae, eum facere at dignissimos sequi voluptate reprehenderit distinctio quibusdam pariatur numquam placeat? Sed dolorum soluta omnis? Voluptas, ipsam aliquid cum consequuntur deserunt distinctio nihil minus libero alias atque praesentium, pariatur officiis sapiente voluptatibus voluptates delectus repellat porro quos beatae fugiat dolorem. Nam quas quisquam at officiis unde, odit quasi, amet neque commodi vel, eaque quo delectus consectetur excepturi! Eos exercitationem animi ad quae, quod nihil deleniti aliquam distinctio ab iste error illum omnis excepturi odit quis accusantium reiciendis dolore repellat saepe vel, quidem minus. Expedita minima dicta accusantium dolorum provident quae vel consequatur ex amet totam labore optio est et inventore, beatae ratione illo nulla excepturi, eum hic dignissimos aperiam sit. Voluptatibus quaerat ducimus eaque suscipit, nostrum labore, nam voluptates ipsam impedit enim alias aspernatur! Quasi hic, quisquam, quam quis voluptas aperiam sit laborum beatae, quaerat quidem ipsa voluptatibus reprehenderit repellendus libero? Totam odit quos repellat sunt, dolorem doloremque sed reiciendis? Qui, aliquam? Et delectus tempore asperiores cupiditate distinctio dolores deleniti, possimus harum quod facilis repellat fugit assumenda laudantium facere ipsa officiis perspiciatis enim sunt, excepturi est. Ullam odio sunt perspiciatis, rem, similique beatae quos doloremque nemo iure, hic accusamus repellendus. Illo quam odio nostrum cum, voluptate debitis perferendis esse quod fugit reiciendis quibusdam voluptatum neque et sed eveniet, ab unde sit deleniti? Labore, saepe voluptas?</div>
+        <div class="card">Card3</div>
+    </div>
+
+
+</body>
+
+</html>

@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS FilTERS</title>
+    <style>
+        
+        .container{
+            display: flex;
+        }
+        .img1 {
+            filter: blur(10px);
+        }
+
+        .img2 img {
+            filter: brightness(130%);
+        }
+        .img3 img {
+            filter: contrast(4.5); /*value as well as percent */
+        }
+        .img3 img {
+            /* filter: invert(1);  the negative image filter inverted here values can be changed   */
+        /* transparant the imgage by using filter property value opacity going from 0 to 1 , fully transparant at 0 and opaque at 1  */
+        filter: opacity(0.5);
+        }
+        .img4 img {
+            filter: grayscale(20); /*value as well as percent */
+            filter: sepia(200);
+            filter: drop-shadow(200);
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+    <div class="img1">
+  <img src="https://upload.wikimedia.org/wikipedia/commons/5/56/Mahira_Khan_2024_%281%29.png" alt="" srcset="" width="300px">
+    </div>
+    <div class="img2">
+  <img src="https://upload.wikimedia.org/wikipedia/commons/5/56/Mahira_Khan_2024_%281%29.png" alt="" srcset="" width="300px">
+    </div>
+    <div class="img3">
+  <img src="https://upload.wikimedia.org/wikipedia/commons/5/56/Mahira_Khan_2024_%281%29.png" alt="" srcset="" width="300px">
+    </div>
+    <div class="img4">
+  <img src="https://upload.wikimedia.org/wikipedia/commons/5/56/Mahira_Khan_2024_%281%29.png" alt="" srcset="" width="300px">
+    </div>
+    <div class="img5">
+  <img src="https://upload.wikimedia.org/wikipedia/commons/5/56/Mahira_Khan_2024_%281%29.png" alt="" srcset="" width="300px">
+    </div>
+   </div>
+</body>
+
+</html>

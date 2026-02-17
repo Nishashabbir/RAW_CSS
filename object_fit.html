@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>OBJECT FIT</title>
+    <style>
+        /* here we are learning how to adjust our inserted images without compromising the aspect ratios  */
+        .container {
+            border: solid 2px red;
+        }
+
+        .container {
+            width: 400px;
+            ;
+            height: 230px;
+            ;
+        }
+
+        img {
+            width: 400px;
+            height: 230px;
+
+        }
+
+        .obj1 img {
+            object-fit: contain;
+            /* full image with ratio maintained */
+        }
+
+        .obj2 img {
+
+            object-fit: cover;
+            /*not full(cut) :   it will just  adjust the image in the given height and width with  ratio maintained*/
+            object-fit: scale-down;
+
+
+        }
+
+        .obj3 img {
+            object-fit: cover;
+            object-position: top right;
+            object-position: 30px 50px;
+            /*also by giving the values like that */
+            object-position: 20% 30%;
+        }
+
+        .obj4 img {
+
+            object-fit: contain;
+            object-fit: fill;
+            /* it will fill the image in given width  */
+            object-position: bottom left;
+            /*cut by retaining these portions */
+        }
+
+    </style>
+</head>
+
+<body>
+
+
+
+    <div class="container obj1">
+        <img src="https://media.istockphoto.com/id/814423752/photo/eye-of-model-with-colorful-art-make-up-close-up.jpg?s=612x612&w=0&k=20&c=l15OdMWjgCKycMMShP8UK94ELVlEGvt7GmB_esHWPYE="
+            alt="">
+
+    </div>
+    <div class="container obj2">
+        <img src="https://media.istockphoto.com/id/814423752/photo/eye-of-model-with-colorful-art-make-up-close-up.jpg?s=612x612&w=0&k=20&c=l15OdMWjgCKycMMShP8UK94ELVlEGvt7GmB_esHWPYE="
+            alt="">
+
+
+    </div>
+    <div class="container obj3">
+        <img src="https://media.istockphoto.com/id/814423752/photo/eye-of-model-with-colorful-art-make-up-close-up.jpg?s=612x612&w=0&k=20&c=l15OdMWjgCKycMMShP8UK94ELVlEGvt7GmB_esHWPYE="
+            alt="">
+    </div>
+    <div class="container obj4">
+        <img src="https://media.licdn.com/dms/image/v2/D4D12AQH9zP6UixRJQw/article-cover_image-shrink_720_1280/article-cover_image-shrink_720_1280/0/1674648769474?e=2147483647&v=beta&t=z6sJu-2SM_Xlupwfi-QvrPrL58S2Nlgas-ob6aPHsfU"
+            alt="">
+
+
+    </div>
+   
+</body>
+
+</html>

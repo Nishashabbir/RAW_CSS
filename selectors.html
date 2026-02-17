@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SELECTORS</title>
+    <style>
+        .box{
+            border: solid 2px red;
+        }
+        .box:first-child{
+background-color: aqua;
+        }
+        .box:nth-child(2){
+background-color: bisque;
+        }
+        .box:nth-child(even){
+            background-color: rgb(87, 87, 159);
+        }
+        .box:last-child(2){
+            /* from below to above  */
+            color: blueviolet;
+        }
+
+     /* parent's   direct child access  */
+        .box > p{
+            color: chartreuse;
+
+        }
+        /* descendants :  any child in box  */
+        .box p{
+color: brown;
+
+        }
+        /* universal selector  */
+        *{
+            color: red;
+
+        }
+         /* every child of parent  */
+        .boxes *{
+            color: black;
+        }
+        [data-color="primary"]{
+            padding: 30px;
+        }
+        /* group selector  */
+        .box , p {
+            color: black;
+        }
+
+        /* we can insert elements before and after the main content through css dynamically */
+        .box::before{
+            content: "Nisha ";
+        }
+        .box::after{
+            content: "   Shabbir ";
+        }
+        ::selection{
+            color: rgb(75, 241, 241);
+            /* if you select the content its color will be changed  */
+        }
+        .box::first-letter{
+            color: rgb(217, 232, 7);
+            font-size: 19px;
+        }
+        input::placeholder{ 
+            /* first create any input box and apply there  */
+            color: blue;
+        }
+    </style>
+</head>
+<body>
+    
+<div class="boxes">
+    these are the boxes 
+
+    <div class="box"> <h1>box1</h1>
+        <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga ipsum similique sunt nisi assumenda architecto cumque incidunt rem voluptates voluptatum commodi, sit a beatae dolorum natus laborum dolore? Recusandae ipsam quibusdam repellendus itaque aspernatur eligendi vel illum culpa atque odio voluptas mollitia, asperiores omnis?
+        </p>
+        <div class="mini">
+            <p>
+          Nisha       Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dolorem,  </p>
+        </div>
+    </div>
+    <div data-color="primary"  class="box">box2</div>
+    <div class="box">box3</div>
+    <div class="box">box4</div>
+</div>
+
+
+</body>
+</html>

@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Media Query </title>
+    <style>
+        body{
+            
+           background-color: rgb(219, 206, 13);
+           
+        }
+        /* media query is used for responsiveness to save your website from being distorted on different devices as the width and height changes  */
+        /* devices types for media query  */
+        /* print for printers  */
+       /* speech devices which can't see  */
+       /* basic syntax :  */
+        /* @media only screen , all , print , speech {}  */
+
+        /* applying the media query on body  */
+        /* you can use max as well min width here  */
+        @media only  screen and (max-width: 455px) { /*it means if the length is below 455 then the content will be changed to these properties of css */
+
+            body {
+                background-color: rgb(8, 158, 158);
+            }           
+        }
+        /* now where actually we use them is little different  */
+        .box{
+            width: 544px;
+            height: 544px;
+            border: solid 2px red;
+        }
+
+        @media only  screen and  (min-width:555px) {
+       .container{
+        display:flex;
+        /* flex-direction : column */
+
+       }           
+        }
+      @media  screen and (orientation: landscape) { /*you can also apply on the portrait */
+        .box{
+
+            border: 7px dashed blue ;
+        }
+      }
+
+
+        
+
+    </style>
+</head>
+
+<body>
+<div class="container">
+    <div class="box"></div>
+    <div class="box"></div>
+    <div class="box"></div>
+</div>
+
+
+</body>
+
+</html>
