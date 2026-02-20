@@ -1,6 +1,7 @@
 
-        /* Grid is a layout  created by : 
-* how many columns
+Grid → Two-dimensional layout
+
+Use when working with rows AND columns* how many columns
 * how many rows
 * and their sizes
 like this : 
