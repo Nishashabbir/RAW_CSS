@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* order goes like this :  */
+        /* vertical offset , horizontal , blur radius , spread radius (basically the size of radius ), color  */
+       .box{
+        height: 200px;
+        width: 200px;
+
+       }
+       .box1{
+
+        box-shadow: 10px 10px 20px 10px grey;
+        /* it applies the shadow effect on the frame of an element  */
+        text-decoration:underline;
+        text-shadow: 10px 10px rgb(97, 97, 5);
+        text-align: center;
+        box-sizing: border-box;
+
+       }
+       .box2{
+        /* Floating effect */
+box-shadow: 0px 10px 25px rgba(0,0,0,0.3);
+       }
+       .box3{
+        /* Glow effect */
+        box-shadow: 0px 0px 20px blue;
+       }
+       .container{
+        display: flex;
+        gap: 30px;
+       }
+       .box4{
+        box-shadow:
+  0px 4px 6px rgba(139, 3, 3, 0.1),
+  0px 10px 20px rgba(67, 227, 201, 0.2);
+       }
+       .box5{
+        /* Inner shadow  very coool  */ 
+box-shadow: inset 0px 0px 10px black;
+       }
+    </style>
+</head>
+<body>
+    <div class="container">
+    <div class="box box1 "> Hello Nisha </div>
+    <div class="box box2 "> Hello Nisha </div>
+    <div class="box box3 "> Hello Nisha </div>
+    <div class="box box4 "> Hello Nisha </div>
+    <div class="box box5 "> Hello Nisha </div>
+</div>
+</body>
+</html>

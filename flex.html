@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* Flexbox is a one-dimensional layout system. It arranges items in a row or column */
+        /* direction :  column , column reverse , row reverse like  3 2 1 simply  */
+        /* justify-content:  sets the element on main axis (the direction in which flex items are laid out , row or column  ) */
+        /* justify-content can have values :  space around ,even , between , flex-start , flex-end */
+        /* align items sets the element on cross axis (prependicular to the main axis) */
+        /* flex-wrap : nowrap (default), wrap, wrap-reverse */
+/* Main axis → direction of items (row or column)
+Cross axis → perpendicular to main axis */
+/* Property	Description
+flex-grow	how much item grows relative to others
+flex-shrink	how much item shrinks if container is small
+flex-basis	initial size before growing/shrinking
+flex	shorthand for grow + shrink + basis
+align-self	override container's align-items for a single item */
+        .container {
+  display: flex; 
+  flex-direction: row; 
+  align-items:self-end;
+ 
+  
+  align-items: self-end;
+  justify-content: space-between;
+  height: 200px;
+  border: 1px solid black;
+}
+
+.item {
+  width: 50px;
+  height: 50px;
+  background: lightblue;
+}
+    </style>
+</head>
+<body>
+    <div class="container">
+  <div class="item">1</div>
+  <div class="item">2</div>
+  <div class="item">3</div>
+  <div class="item">3</div>
+  <div class="item">3</div>
+  <div class="item">3</div>
+  <div class="item">3</div>
+  <div class="item">3</div>
+  <div class="item">3</div>
+  <div class="item">3</div>
+  <div class="item">3</div>
+</div>
+</body>
+</html>
